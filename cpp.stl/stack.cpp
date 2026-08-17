@@ -1,0 +1,39 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+
+void Explainstack(){
+
+    stack<int>st;
+    st.push(1);
+    st.push(2);
+    st.push(3);
+    st.push(4);
+    st.emplace(5);
+
+    cout<<st.top();
+
+    st.pop();
+
+    cout<<st.top();
+
+    cout<<st.size();
+
+    cout<<st.empty();
+stack<int> temp = st;   // copy original stack
+
+while(!temp.empty()) {
+    cout << temp.top() << " ";
+    temp.pop();
+}
+
+
+}
+
+int main(){
+
+    Explainstack();
+
+
+    return 0;
+}
